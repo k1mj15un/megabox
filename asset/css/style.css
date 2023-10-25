@@ -49,15 +49,6 @@
     background: #211f1f;
 }
 
-/* swiper */
-.swiper-container {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-.swiper-container2 .swiper-slide::after{
-    opacity: 0;
-}
 
 /* 가운데 영역 */
 .container {
@@ -896,8 +887,9 @@
 }
 
 /* 트레일러 */
-.overlay{
-    background: rgba(0,0,0,0.92);
+.overlay {
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -905,10 +897,10 @@
     left: 0;
     z-index: 10000;
 }
-.modal{
+.modal {
     position: absolute;
 }
-.modal_close{
+.modal_close {
     background: url(../img/close.svg) no-repeat;
     background-size: 32px 32px;
     border: 0;
@@ -922,7 +914,9 @@
     right: 24px;
     text-indent: 100%;
 }
-body.modal_on{}
+body.modal_on {
+    overflow: hidden;
+}
 
 
 @media (max-width: 1290px){
